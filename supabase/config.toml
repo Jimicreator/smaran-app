@@ -1,0 +1,5 @@
+# Smaran Supabase configuration
+# The dispatcher is protected by its own x-smaran-cron-secret header rather than
+# a user JWT, so Supabase's gateway JWT check is intentionally disabled for it.
+[functions.dispatch-loud-alarms]
+verify_jwt = false
